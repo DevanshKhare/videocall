@@ -3,6 +3,7 @@ const app = express();
 const server = require("http").Server(app);
 const { v4: uuidv4 } = require("uuid");
 const io = require("socket.io")(server);
+const port = process.env.PORT || 3030;
 // Peer
 
 const { ExpressPeerServer } = require("peer");
@@ -15,7 +16,7 @@ app.use(express.static("public"));
 app.use("/peerjs", peerServer);
 
 app.get("/", (req, rsp) => {
-  rsp.redirect(`/${uuidv4()}`);
+  res.redirect(`/${uuidv4()}`);
 });
 
 app.get("/:room", (req, res) => {
@@ -33,4 +34,4 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(process.env.PORT || 3030);
+server.listen(port);
