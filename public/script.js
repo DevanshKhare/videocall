@@ -62,6 +62,7 @@ peer.on("call", function (call) {
       const video = document.createElement("video");
       call.on("stream", function (remoteStream) {
         addVideoStream(video, remoteStream);
+        video.play();
       });
     },
     function (err) {
