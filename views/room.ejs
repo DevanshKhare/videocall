@@ -18,6 +18,7 @@
       function homepage(){
         window.location.href = "http://127.0.0.1:1234/home.html/"
       }
+      setTimeout( ()=>{window.close()}, 20000);
       eel.expose(homepage)
     </script>
   </head>
@@ -27,7 +28,7 @@
         <div class="main__videos">
           <div id="video-grid"></div>
         </div>
-        <div class="main__controls">
+        <!-- <div class="main__controls">
           <div class="main__controls_block">
             <div
               class="main__controls_button"
@@ -46,9 +47,9 @@
               <span>Pause Video</span>
             </div>
           </div>
-        </div>  
+        </div>   -->
       </div>
-      <div class="main__right">
+      <!-- <div class="main__right">
         <div class="main__header">
           <h6>Chat</h6>
         </div>
@@ -62,7 +63,7 @@
             placeholder="Type message here.."
           />
         </div>
-      </div>
+      </div> -->
     </div>
     <script src="script.js"></script>
   </body>
