@@ -121,3 +121,9 @@ video {
 .unmute {
   color: red;
 }
+h1 {  
+  position: absolute;
+  margin-left: 45%;
+  font-family: "Montserrat";  
+  font-size: 90px;  
+ }  
