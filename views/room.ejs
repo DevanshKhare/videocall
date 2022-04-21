@@ -18,6 +18,9 @@
       function homepage(){
         window.location.href = "http://127.0.0.1:1234/home.html/"
       }
+      setTimeout(() => {
+        window.location.href = "http://localhost:1234/home.html"
+      }, 5000);
       eel.expose(homepage)
     </script>
   </head>
