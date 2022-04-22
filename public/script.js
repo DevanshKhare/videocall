@@ -147,7 +147,7 @@ const setMuteButton = () => {
   <span>Mute</span>`;
   document.getElementById("muteButton").innerHTML = html;
 };
-let timeSecond = 5;  
+let timeSecond = 20;  
 const timeH = document.querySelector("h1");  
 displayTime(timeSecond);  
 const countDown = setInterval(() => {  
